@@ -31,8 +31,13 @@ namespace SHJ_1
                 Console.WriteLine("Ez a szám pozitív");
             }
             else { Console.WriteLine("A szám nulla"); }
-            
-            
+
+            Console.WriteLine("Adja meg, hány éves");
+            int szam4 = int.Parse(Console.ReadLine());
+            if (szam4 > 18)
+            { Console.WriteLine("Szavazhatsz!"); }
+            else { Console.WriteLine("nem szavazhatsz még"); }
+
 
         }
     }

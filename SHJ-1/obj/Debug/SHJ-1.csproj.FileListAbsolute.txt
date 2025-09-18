@@ -1,0 +1,7 @@
+C:\Users\solyomhj\source\repos\SHJ-1\SHJ-1\obj\Debug\SHJ-1.csproj.AssemblyReference.cache
+C:\Users\solyomhj\source\repos\SHJ-1\SHJ-1\obj\Debug\SHJ-1.csproj.CoreCompileInputs.cache
+C:\Users\solyomhj\source\repos\SHJ-1\SHJ-1\bin\Debug\SHJ-1.exe.config
+C:\Users\solyomhj\source\repos\SHJ-1\SHJ-1\bin\Debug\SHJ-1.exe
+C:\Users\solyomhj\source\repos\SHJ-1\SHJ-1\bin\Debug\SHJ-1.pdb
+C:\Users\solyomhj\source\repos\SHJ-1\SHJ-1\obj\Debug\SHJ-1.exe
+C:\Users\solyomhj\source\repos\SHJ-1\SHJ-1\obj\Debug\SHJ-1.pdb
