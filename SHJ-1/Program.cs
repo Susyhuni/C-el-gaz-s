@@ -60,21 +60,32 @@ namespace SHJ_1
             { Console.WriteLine("Szavazhatsz!"); }
             else { Console.WriteLine("nem szavazhatsz még!"); }
 
-            Console.WriteLine("Adjon meg egy jegyet(1-5)");
-            int jegy = int.Parse(Console.ReadLine());
-            if (jegy >= 1 && jegy <= 5) 
+            int jegy;
+
+            do
             {
-                if (jegy >= 1 && honap <= 2)
+                Console.WriteLine("Adjon meg egy jegyet(1-5)");
+                jegy = int.Parse(Console.ReadLine());
+
+                if(jegy < 1 || jegy > 5)
+                {
+                    Console.WriteLine("Nem létező jegyet  adott meg. Kérem, 1 és 5 között válasszon.");
+                }
+
+
+               
+            } while (jegy<1 || jegy>5);
+
+            if (jegy >= 1 && jegy <= 5)
+            {
+                if (jegy >= 1 && jegy <= 2)
                     Console.WriteLine("elégtelen");
                 else if (jegy == 3)
                     Console.WriteLine("közepes");
                 else
                     Console.WriteLine("Jeles");
             }
-            else
-            {
-                Console.WriteLine("Nem létező jegyet  adott meg. Kérem, 1 és 5 között válasszon.");
-            }
+
 
             int tárolt = 15;
             int tipp;
@@ -97,6 +108,42 @@ namespace SHJ_1
                 {
                     Console.WriteLine("Gratulálok, eltaláltad!");
                     break;
+                }
+            }
+                Console.WriteLine("Adjon meg egy egész számot");
+                int szam6 = int.Parse(Console.ReadLine());
+                if (szam6 % 2 == 0 && szam6 > 0) { Console.WriteLine("ez egy pozitív páros szám"); }
+                else { Console.WriteLine("A szám nem pozitív páros"); }
+
+            Console.WriteLine("Adjon meg egy betűt vagy számot");
+            var valami =Console.ReadLine();
+            if (char.IsNumber(valami[0]))
+            {
+                Console.WriteLine("Ez egy szám");
+            }
+            else if (char.IsLetter(valami[0]))
+            {
+                Console.WriteLine("Ez egy betű");
+            }
+            else
+            {
+                Console.WriteLine("Külenleges karaktert adott meg");
+            }
+            string Jelszo = "titok123";
+            string felJelszo;
+            while (true)
+            {
+                Console.Write("Add meg a jelszót: ");
+                felJelszo = Console.ReadLine();
+
+                if (felJelszo == Jelszo)
+                {
+                    Console.WriteLine("Hozzáférés engedélyezve!");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Próbáld újra.");
                 }
             }
         }
